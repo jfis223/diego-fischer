@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :set_task, only: [:edit, :update, :destroy]
 
   def index
     @books = Book.all

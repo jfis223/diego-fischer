@@ -1,3 +1,24 @@
-<% @books.each do |book| %>
-<%= book.title %>
-<% end %>
+<div class="everything">
+  <div class="container">
+    <% @books.each do |book| %>
+      <%= link_to book_path(book) do %>
+          <div class="mobile-layout">
+            <div class="book-cover">
+                <div class=""><img class="book-top" src="https://www.penguinlibros.com/uy/247558/al-encuentro-de-las-tres-marias.jpg" alt="book-top" /></div>
+                <img class="book-side" src="https://saranyamk.github.io/images-repo/book-side.svg" alt="book-side" />
+            </div>
+            <div class="preface">
+              <div class="content">
+                <div class="header">
+                  <div class="title"><%= book.title %></div>
+                  </div>
+                </div>
+                <div class="year"><%= book.year %></div>
+                <div class="body">
+                </div>
+              </div>
+            </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
