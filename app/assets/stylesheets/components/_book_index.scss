@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+.title {
+  text-align: center;
+  color: white;
+  size: 2rem;
+  padding-bottom: 20px;
+}
+
 :root {
   --mobile-width: 325px;
   --mobile-height: 500px;
@@ -19,13 +26,17 @@
 }
 
 .everything {
-  margin: auto;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  margin: auto;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .info {
@@ -38,6 +49,7 @@
 }
 
 .mobile-layout {
+  margin: auto;
   width: var(--mobile-width);
   height: var(--mobile-height);
   border-radius: var(--mobile-radius);
@@ -46,6 +58,8 @@
   color: var(--font-color);
   background-color: var(--mobile-bg);
   border-bottom-left-radius: var(--mobile-radius);
+  border: 1px solid #979DAC;
+  box-shadow: 10px 14px 52px -5px rgba(0,0,0,0.38);
 
   .book-cover {
     position: relative;
@@ -102,15 +116,15 @@
       align-items: center;
     }
 
-    .title {
+    .book_title {
       //font-family: 'Open Sans', sans-serif;
-      font-family: "Quicksand", sans-serif;
+      font-family: "EB Garamond", sans-serif;
       font-size: 26px;
       margin-bottom: 10px;
     }
 
     .year {
-      font-family: "Open Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-style: italic;
       margin-bottom: 20px;
     }
