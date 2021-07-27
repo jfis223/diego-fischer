@@ -18,9 +18,9 @@
   --separator-height: 500px;
 
   --bg: #add6ff;
-  --mobile-bg: #2a6193;
+  --mobile-bg: #001845;
   --intro-bg: #08325b;
-  --font-color: #807b7b;
+  --font-color: #0E0000;
 
   --transition: transform 0.7s ease-in-out;
 }
@@ -125,7 +125,7 @@
     }
 
     .year {
-      font-family: "Roboto", sans-serif;
+      font-family: "EB Garamond", sans-serif;
       font-style: italic;
       margin-bottom: 20px;
     }
@@ -135,8 +135,9 @@
       transition: var(--transition);
     }
 
-    .body {
-      font-family: "Quicksand", sans-serif;
+    .subtitle {
+      font-family: "EB Garamond", sans-serif;
+      margin-bottom: 15px;
     }
 
     .body p:first-child {
