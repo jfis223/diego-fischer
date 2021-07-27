@@ -194,4 +194,6 @@ book16 = Book.create!(
   user: user)
 book16.photo.attach(io: File.open('app/assets/images/Book_Covers/Cuando todo pase.jpg'), filename: 'image.jpg')
 
+puts 'Books finished'
+
 puts 'All done'
