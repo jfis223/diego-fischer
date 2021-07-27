@@ -3,7 +3,7 @@ class BooksController < ApplicationController
   before_action :set_task, only: [:edit, :update, :destroy]
 
   def index
-    @books = Book.all
+    @books = Book.all.sort_by(&:year)
   end
 
   def show

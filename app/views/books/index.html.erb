@@ -1,7 +1,7 @@
 <h2 class="title">Libros</h2>
 <div class="everything">
   <div class="container">
-    <% @books.each do |book| %>
+    <% @books.reverse.each do |book| %>
       <%= link_to book_path(book) do %>
           <div class="mobile-layout">
             <div class="book-cover">
