@@ -5,7 +5,13 @@
       <%= link_to book_path(book) do %>
           <div class="mobile-layout">
             <div class="book-cover">
-                <div class=""><img class="book-top" src="https://www.penguinlibros.com/uy/247558/al-encuentro-de-las-tres-marias.jpg" alt="book-top" /></div>
+                <div class="">
+                  <% if book.photo.attached? %>
+                  <%= cl_image_tag book.photo.key, class: 'book-top' %>
+                  <% else %>
+                  <%= "" %>
+                  <% end  %>
+                  </div>
                 <img class="book-side" src="https://saranyamk.github.io/images-repo/book-side.svg" alt="book-side" />
             </div>
             <div class="preface">
