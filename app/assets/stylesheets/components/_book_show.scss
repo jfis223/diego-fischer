@@ -24,7 +24,7 @@
   perspective: 150px;
   perspective-origin: right center;
   transform-style: preserve-3d;
-  transform: scaleX(0.88) scaleY(0.95);
+  transform: scaleX(0.88) scaleY(0.95) translateZ(-12px);
 
   position: relative;
   top: -150px;

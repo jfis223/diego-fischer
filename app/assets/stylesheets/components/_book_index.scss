@@ -29,6 +29,10 @@
   grid-gap: 16px;
   margin: auto;
 
+   @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
@@ -77,6 +81,7 @@
     left: 250px;
     z-index: 6;
     transform: translateZ(28.5px);
+    -moz-transform:translateZ(28.5px);
     border-radius: var(--mobile-radius);
   }
 
