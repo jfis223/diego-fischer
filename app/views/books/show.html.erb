@@ -1,13 +1,15 @@
 <div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @book.cover.key, height: 300, crop: :fill %>')"></div>
 
 <div class="show-banner">
-  <div class="libro">
-    <span></span>
-    <% if @book.photo.attached? %>
-      <%= cl_image_tag @book.photo.key, class: 'libro-img', alt: @book.title %>
-    <% else %>
-      <%= "" %>
-    <% end  %>
+  <div class="libro-nav">
+    <div class="libro">
+      <span></span>
+      <% if @book.photo.attached? %>
+        <%= cl_image_tag @book.photo.key, class: 'libro-img', alt: @book.title %>
+      <% else %>
+        <%= "" %>
+      <% end  %>
+    </div>
   </div>
 
   <div class="show-title">

@@ -114,9 +114,7 @@ ul li {
   padding-bottom: 10px;
 }
 
-button {
-  background: transparent;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+.libro-nav {
+  margin: auto;
+  z-index: 0;
 }
