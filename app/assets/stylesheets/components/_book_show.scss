@@ -1,7 +1,7 @@
 .libro {
   width: 276px;
   height: 375px;
-  margin: 20px auto 0;
+  margin: 20px;
   -moz-transform: scaleX(0.88) scaleY(0.95);
   -moz-perspective: 150px;
   -moz-perspective-origin: right center;
@@ -25,12 +25,23 @@
   perspective-origin: right center;
   transform-style: preserve-3d;
   transform: scaleX(0.88) scaleY(0.95);
+
+  position: relative;
+  top: -150px;
+  margin-bottom: -100px;
+
+    @media (max-width: 600px) {
+    margin: 20px auto 0;
+    margin-bottom: -100px;
+  }
 }
+
+
 
 .libro-img {
   display: block;
   height: 375px;
-  width: 276px;
+  width: 269px;
   position: absolute;
   z-index: 5;
   -moz-transform: rotateY(-4deg) translateZ(0px);

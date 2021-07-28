@@ -1,16 +1,27 @@
+<div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @book.cover.key, height: 300, crop: :fill %>')"></div>
 
-<div class="libro">
-  <span></span>
-  <% if @book.photo.attached? %>
-    <%= cl_image_tag @book.photo.key, class: 'libro-img', alt: @book.title %>
-  <% else %>
-    <%= "" %>
-  <% end  %>
+<div class="show-banner">
+  <div class="libro">
+    <span></span>
+    <% if @book.photo.attached? %>
+      <%= cl_image_tag @book.photo.key, class: 'libro-img', alt: @book.title %>
+    <% else %>
+      <%= "" %>
+    <% end  %>
+  </div>
+
+  <div class="show-title">
+    <h1> <%= @book.title %></h1>
+    <h3> <% if @book.subtitle %>
+        <%= @book.subtitle %>
+      <% else %>
+        <%= "" %>
+      <% end  %>
+    </h3>
+    <h4><%= @book.year %></h4>
+  </div>
 </div>
 
-
-
-
-<%= @book.title %>
-<%= @book.year %>
-<%= sanitize @book.description %>
+<div class="description">
+  <%= sanitize @book.description %>
+</div>
