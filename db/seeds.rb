@@ -28,15 +28,21 @@ book1 = Book.create!(
   awards: '',
   user: user)
 book1.photo.attach(io: File.open('app/assets/images/Book_Covers/al_este_1.jpg'), filename: 'image.jpg')
+book1.cover.attach(io: File.open('app/assets/images/Portadas/Al_este_de_la_historia_1.jpg'), filename: 'image.jpg')
 
 book2 = Book.create!(
   title: 'Al este de la historia',
   subtitle: 'Un abrazo entre el ayer y el hoy',
   year: '2000',
-  description:'<p>Libro donde se explora en la vida de nueve personajes, nueve relatos, historias de vida que son también parte de la historia de Punta del Este. Entre ellos hay políticos, actores, artistas, empresarios, músicos, escritores. Todos con algo en común, que es el sitio que eligieron ya sea como refugio, sitio de descanso o como fuente de inspiración creadora. Entre fotos y anécdotas se encuentran entre otras personalidades: Wilson Ferreira Aldunate, Alfonsina Storni, Margarita Xirgú. Constituye éste un segundo tomo, el primer tomo titulado "Al este de la historia"de notable éxito editorial obtuvo además la primera mención en el Premio Anual de Literatura 1998 otorgado por el Ministerio de Educación y Cultura.</p>',
+  description:'<p>¿Por qué Wilson Ferreira Aldunate, Arturo Frondizi, María Luisa Bemberg y Juan Máximo Gorlero vivieron en Punta del Este los momentos más felices y dramáticos de sus vidas?</p>
+  <p>¿Qué encontraron en ese balneario, entonces casi virgen, la familia Behren, Alfonsina Storni y Margarita Xirgú?</p>
+  <p>¿Qué pasiones despertó en Carlos Páez Vilaró y Daniel Rabinovich esa cadena interminable de playas con arenas blanquísimas bañadas por un río que se confunde en un abrazo con el mar?</p>
+  <p>Todos ellos desembarcaron en la península en diferentes épocas y circunstancias. Todos ellos fueron hechizados por sus rojos atardeceres mientras expresaban un deseo. Todos ellos llegaron un día para quedarse...</p>
+  <p><i>Al este de la historia: Un abrazo entre el ayer y el hoy</i> intenta hurgar en las huellas que estos personajes dejaron. Personalidades muy distintas y distantes entre sí, es cierto, pero que escribieron la historia menos conocida y más entrañable del balneario: la cotidiana. Algunas también protagonizaron hechos que pudieron haber cambiado el rumbo de este continente. Otros siguen soñando sus más hermosos sueños entre el mar y las sierras, como la primera vez, cuando descubrieron ese paraíso en territorio oriental.</p>',
   awards: '',
   user: user)
 book2.photo.attach(io: File.open('app/assets/images/Book_Covers/al_este_2.jpg'), filename: 'image.jpg')
+book2.cover.attach(io: File.open('app/assets/images/Portadas/Al_este_de_la_historia_2.jpg'), filename: 'image.jpg')
 
 book3 = Book.create!(
   title: 'Que nos abrace el viento',
@@ -48,6 +54,8 @@ book3 = Book.create!(
   awards: '',
   user: user)
 book3.photo.attach(io: File.open('app/assets/images/Book_Covers/que_nos_abrace_el_viento.jpg'), filename: 'image.jpg')
+book3.cover.attach(io: File.open('app/assets/images/Portadas/Que_nos_abrace_el_viento_2.jpg'), filename: 'image.jpg')
+
 
 book4 = Book.create!(
   title: 'Al este de la historia',
@@ -58,6 +66,8 @@ book4 = Book.create!(
   awards: '',
   user: user)
 book4.photo.attach(io: File.open('app/assets/images/Book_Covers/Al Este de la Historia 3.jpg'), filename: 'image.jpg')
+book4.cover.attach(io: File.open('app/assets/images/Portadas/Al_este_de_la_historia_3.jpg'), filename: 'image.jpg')
+
 
 book5 = Book.create!(
   title: 'Al encuentro de las Tres Marías',
@@ -67,6 +77,7 @@ book5 = Book.create!(
   awards: 'Libro de Oro en 2009',
   user: user)
 book5.photo.attach(io: File.open('app/assets/images/Book_Covers/Al encuentro de las tres marías.jpg'), filename: 'image.jpg')
+book5.cover.attach(io: File.open('app/assets/images/Portadas/al_encuentro_de_las_tres_marias.jpg'), filename: 'image.jpg')
 
 book6 = Book.create!(
   title: 'Qué tupé',
@@ -77,6 +88,8 @@ book6 = Book.create!(
   awards: '',
   user: user)
 book6.photo.attach(io: File.open('app/assets/images/Book_Covers/Que tupe.jpg'), filename: 'image.jpg')
+book6.cover.attach(io: File.open('app/assets/images/Portadas/que_tupe.jpg'), filename: 'image.jpg')
+
 
 book7 = Book.create!(
   title: 'Hasta donde me lleve la vida',
@@ -88,6 +101,7 @@ book7 = Book.create!(
   awards: '',
   user: user)
 book7.photo.attach(io: File.open('app/assets/images/Book_Covers/Hasta donde me lleve la vida.jpg'), filename: 'image.jpg')
+book7.cover.attach(io: File.open('app/assets/images/Portadas/hasta_donde_me_lleve_la_vida.jpg'), filename: 'image.jpg')
 
 book8 = Book.create!(
   title: 'A mí me aplauden',
@@ -98,6 +112,7 @@ book8 = Book.create!(
   awards: '',
   user: user)
 book8.photo.attach(io: File.open('app/assets/images/Book_Covers/A mi me aplauden.jpg'), filename: 'image.jpg')
+book8.cover.attach(io: File.open('app/assets/images/Portadas/a_mi_me_aplauden.jpg'), filename: 'image.jpg')
 
 book9 = Book.create!(
   title: 'Serás mía o de nadie',
@@ -109,6 +124,7 @@ book9 = Book.create!(
   awards: '',
   user: user)
 book9.photo.attach(io: File.open('app/assets/images/Book_Covers/Seras mia o de nadie.jpg'), filename: 'image.jpg')
+book9.cover.attach(io: File.open('app/assets/images/Portadas/seras_mia_o_de_nadie.jpg'), filename: 'image.jpg')
 
 book10 = Book.create!(
   title: 'Tres hombres y una batalla',
@@ -122,6 +138,8 @@ horizonte, mientras quienes no adhieren a sus gobiernos totalitarios son persegu
   awards: '',
   user: user)
 book10.photo.attach(io: File.open('app/assets/images/Book_Covers/Tres hombres y una batalla.jpg'), filename: 'image.jpg')
+book10.cover.attach(io: File.open('app/assets/images/Portadas/tres_hombres_y_una_batalla.jpg'), filename: 'image.jpg')
+
 
 book11 = Book.create!(
   title: 'Carlota Ferreira',
@@ -133,6 +151,8 @@ book11 = Book.create!(
   awards: '',
   user: user)
 book11.photo.attach(io: File.open('app/assets/images/Book_Covers/Carlota Ferreira.jpg'), filename: 'image.jpg')
+book11.cover.attach(io: File.open('app/assets/images/Portadas/carlota_ferreira.png'), filename: 'image.jpg')
+
 
 book12 = Book.create!(
   title: 'Mejor callar',
@@ -145,6 +165,7 @@ book12 = Book.create!(
   awards: '',
   user: user)
 book12.photo.attach(io: File.open('app/assets/images/Book_Covers/Mejor callar.jpg'), filename: 'image.jpg')
+book12.cover.attach(io: File.open('app/assets/images/Portadas/mejor-callar.jpg'), filename: 'image.jpg')
 
 book13 = Book.create!(
   title: 'El sentir de las violetas',
@@ -159,6 +180,8 @@ Pertenecía a una familia acomodada, era joven y hermosa. Poco después se compr
   awards: '',
   user: user)
 book13.photo.attach(io: File.open('app/assets/images/Book_Covers/El Sentir de las violetas.jpg'), filename: 'image.jpg')
+book13.cover.attach(io: File.open('app/assets/images/Portadas/sentir_de_las_violetas.png'), filename: 'image.jpg')
+
 
 book14 = Book.create!(
   title: 'Doña Cándida Saravia',
@@ -170,6 +193,7 @@ book14 = Book.create!(
   awards: '',
   user: user)
 book14.photo.attach(io: File.open('app/assets/images/Book_Covers/dona-candida-saravia.jpg'), filename: 'image.jpg')
+book14.cover.attach(io: File.open('app/assets/images/Portadas/candida_saravia.jpg'), filename: 'image.jpg')
 
 book15 = Book.create!(
   title: 'El robo de la historia',
@@ -182,6 +206,7 @@ De esta forma dio inicio uno de los atracos más soprendentes de la historia uru
   awards: '',
   user: user)
 book15.photo.attach(io: File.open('app/assets/images/Book_Covers/El Robo de la Historia.jpg'), filename: 'image.jpg')
+book15.cover.attach(io: File.open('app/assets/images/Portadas/robo_de_la_historia.jpg'), filename: 'image.jpg')
 
 book16 = Book.create!(
   title: 'Cuando todo pase',
@@ -193,6 +218,7 @@ book16 = Book.create!(
   awards: '',
   user: user)
 book16.photo.attach(io: File.open('app/assets/images/Book_Covers/Cuando todo pase.jpg'), filename: 'image.jpg')
+book16.cover.attach(io: File.open('app/assets/images/Portadas/cuando_todo_pase.jpg'), filename: 'image.jpg')
 
 puts 'Books finished'
 

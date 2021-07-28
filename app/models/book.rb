@@ -3,4 +3,5 @@ class Book < ApplicationRecord
   validates :title, presence: true
   validates :year, presence: true
   has_one_attached :photo
+  has_one_attached :cover
 end
