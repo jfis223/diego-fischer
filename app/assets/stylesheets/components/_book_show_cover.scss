@@ -45,3 +45,28 @@
   text-align: justify;
   padding: 20px;
 }
+
+.buy-btn {
+  text-align: end;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: background-color 200ms linear;
+
+  &:hover{
+    background-color: white;
+  }
+
+  &:hover h5{
+    color: #011845;
+  }
+}
+
+
+.btn{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+}

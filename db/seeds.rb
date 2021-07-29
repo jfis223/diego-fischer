@@ -52,6 +52,7 @@ book3 = Book.create!(
     <p>Hasta que por fin llegaron a un acuerdo. Cuando Lussich, en la última etapa de su vida, emprendió su más ambiciosa empresa: la siembra de Punta Ballena, el viento se serenó y se transformó en su aliado.</p>
     <p>Que nos abrace el viento es la historia y la leyenda de Antonio Lussich. Pero también es la historia de cientos de criollos generosos que construyeron un país para las generaciones futuras, vinieran de donde vinieran.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160283-que-nos-abrace-el-viento-9789974713468',
   user: user)
 book3.photo.attach(io: File.open('app/assets/images/Book_Covers/que_nos_abrace_el_viento.jpg'), filename: 'image.jpg')
 book3.cover.attach(io: File.open('app/assets/images/Portadas/Que_nos_abrace_el_viento_2.jpg'), filename: 'image.jpg')
@@ -64,6 +65,7 @@ book4 = Book.create!(
   description: '<p>Punta del Este está de fiesta. Es que en julio de 2007 el balneario cumple un siglo de vida y resulta más que oportuno reeditar <i>Al este de la historia</i> en un volumen especial al que se le ha incorporado un nuevo personaje y más fotografías con el valor agregado de doce óleos del pintor uruguayo Adolfo Sayago especialmente hechos para esta edición.</p>
   <p>En estas páginas con olor a océano y bosque el lector se encontrará con Adolfo Bioy Casares, Vinicius de Moraes, Astor Piazzolla, Antonio Lussich, Leonor Uriburu de Anchorena, Rafael Alberti, Luis Alberto de Herrera, Juan Máximo Gorlero, Silvina Bullrich, Eduardo Víctor Haedo, los Behrens, María Luisa Bemberg, Arturo Frondizi, Wilson Ferreira Aldunate, Daniel Rabinovich, Amalia Lacroze de Fortabat, Carlos Páez Vilaró y Carlos Pedro Blaquier. Todos personajes que tienen muchas cosas en común. Pero quizás el rasgo que más los une es que alguna vez tomaron una piedra, la lanzaron lejos y miraron cómo se hundía en el mar mientras formulaban un sueño. Este libro busca esa piedra. Y ese sueño. ¡Por otros cien años! Que así sea. </p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160280-al-este-de-la-historia-9789974713451',
   user: user)
 book4.photo.attach(io: File.open('app/assets/images/Book_Covers/Al Este de la Historia 3.jpg'), filename: 'image.jpg')
 book4.cover.attach(io: File.open('app/assets/images/Portadas/Al_este_de_la_historia_3.jpg'), filename: 'image.jpg')
@@ -75,6 +77,7 @@ book5 = Book.create!(
   year: '2008',
   description: '<p>Nada fue como se contó. O casi nada. Una mujer hermosa y con talento que antes de cumplir los treinta años logró la fama y la gloria. Una mujer que en el ocaso de su vida decidió contemplar el mundo a través de los vidrios de una ventana. Hasta aquí la historia conocida de Juana de Ibarbourou, pero para completarla habría que hablar de una mujer inteligente y ambiciosa que supo siempre adónde quería llegar. Alguien que se enamoró más de una vez y vivió romances prohibidos. Una víctima de la violencia doméstica. ¿Una víctima de su hijo? ¿Una víctima de su entorno? Adicta a las drogas, la felicidad fue para ella un estado pasajero, que auguraba el dolor y la angustia que nunca la abandonaron. Y aun en el infierno de morfina, violencia y desamor en el que transcurrió la mayor parte de su vida, escribió versos magistrales y prosas memorables.</p>',
   awards: 'Libro de Oro en 2009',
+  link: 'https://www.penguinlibros.com/uy/biografias/160091-al-encuentro-de-las-tres-marias-9789974701625',
   user: user)
 book5.photo.attach(io: File.open('app/assets/images/Book_Covers/Al encuentro de las tres marías.jpg'), filename: 'image.jpg')
 book5.cover.attach(io: File.open('app/assets/images/Portadas/al_encuentro_de_las_tres_marias.jpg'), filename: 'image.jpg')
@@ -86,6 +89,7 @@ book6 = Book.create!(
   description: '<p>La muerte del diputado blanco Washington Beltrán en un duelo a pistola conmovió al Uruguay de 1920. Su contrincante no fue otro sino el ex presidente José Batlle y Ordóñez. Probablemente este duelo haya establecido una diferencia definitiva entre dos visiones de país y dos maneras de entender y ejercer la democracia.</p>
 <p>Hace 90 años el Uruguay se conmovió con la muerte del diputado blanco Washington Beltrán en un duelo a pistola. Su contrincante en el lance fue el dos veces ex presidente de la República José Batlle y Ordóñez. ¿Cuánto hay de cierto en lo que nos ha llegado por tradición oral sobre ese duelo? ¿Por qué las familias Batlle y Beltrán guardaron siempre un hermético silencio acerca del episodio? ¿Por qué adoptaron la misma actitud los testigos del hecho que tiñó de sangre el Viernes Santo de 1920? La historia ha sido trasmitida de generación en generación, pero no existe un libro que haya abordado el tema en profundidad. ¿Qué intereses movían a Batlle? ¿Qué representaba Beltrán para el Partido Nacional? ¿Era el Uruguay de entonces un país verdaderamente democrático? Qué tupé es una investigación periodística en la que por primera vez salen a la luz documentos de extraordinario valor histórico, que retratan a una sociedad hipócrita, en la que los dirigentes políticos actuaban como en una logia secreta. El duelo entre Batlle y Beltrán fue quizás el episodio que marcó definitivamente dos visiones diferentes de país de las divisas tradicionales y dos maneras distintas de entender y ejercer la democracia. Con pinceladas de novela, Qué tupé es también una historia de amor. De un amor inclaudicable aun después de la muerte, capaz de desafiar las fronteras de la entrega y el perdón.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160286-que-tupe-9789974713475',
   user: user)
 book6.photo.attach(io: File.open('app/assets/images/Book_Covers/Que tupe.jpg'), filename: 'image.jpg')
 book6.cover.attach(io: File.open('app/assets/images/Portadas/que_tupe.jpg'), filename: 'image.jpg')
@@ -99,6 +103,7 @@ book7 = Book.create!(
   <p>En su juventud Páez Vilaró intuyó que el mundo era pequeño y merecía ser recorrido; decidió explorarlo. Hizo sus primeros garabatos en la plaza de Mayo de Buenos Aires cuando Perón llegaba por primera vez al poder. Encontró al candombe en los óleos de Pedro Figari y en las comparsas del barrio Sur de Montevideo. Cuando el 1 de noviembre de 1957 pisó por primera vez el lomo de la Ballena, imaginó su arte comulgando con la naturaleza y allí mismo se puso a tejer su sueño y su propia leyenda. Esculpió Casapueblo.</p>
   <p>Hoy, con 87 años, continúa asomándose a ese paisaje que no se concibe sin él. Sus anhelos, sus proezas, sus rarezas han atravesado mares y océanos. Como toda gran aventura, su vida tiene luces y sombras. Con pinceladas cuidadosamente escogidas, Diego Fischer aborda las claves de su esencia seductora y transgresora.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160783-carlos-paez-vilaro-9789974736467',
   user: user)
 book7.photo.attach(io: File.open('app/assets/images/Book_Covers/Hasta donde me lleve la vida.jpg'), filename: 'image.jpg')
 book7.cover.attach(io: File.open('app/assets/images/Portadas/hasta_donde_me_lleve_la_vida.jpg'), filename: 'image.jpg')
@@ -110,6 +115,7 @@ book8 = Book.create!(
   description: '<p>A mí me aplauden es una mirada reveladora sobre una mujer que un día decidió dedicar su vida entera al arte y la filantropía. Es el retrato de China Zorrilla, una estrella que con 90 años vividos a pleno sigue brillando con la misma intensidad.</p>
   <p>¿Cuánto conocemos realmente de China Zorrilla? ¿Cuántos personajes encierra esa señora paqueta, que pudo haberse casado con un hombre de su misma clase y de fortuna, formar un hogar tradicional, tener hijos y envejecer viendo crecer a sus nietos? Se sabe: por sus venas corre sangre de artista, de su abuelo poeta y de su padre escultor, pero ¿fue eso suficiente para que, siendo una adolescente, eligiera una profesión muy mal vista en su época? Poseedora de ese don especial que solo tienen los elegidos, hizo reír con su humor refinado y conmovió en papeles dramáticos. Recorrió los escenarios más importantes del mundo para mostrar su arte y su talento. En todos cosechó aplausos y la aprobación de la crítica. ¿Qué costo tuvieron esos aplausos y esas críticas? El cine, la televisión y la radio la convirtieron en una figura de inmensa popularidad. ¿Qué dejó por el camino? ¿Qué fue de sus amores?</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160056-a-mi-me-aplauden-9789974701229',
   user: user)
 book8.photo.attach(io: File.open('app/assets/images/Book_Covers/A mi me aplauden.jpg'), filename: 'image.jpg')
 book8.cover.attach(io: File.open('app/assets/images/Portadas/a_mi_me_aplauden.jpg'), filename: 'image.jpg')
@@ -122,6 +128,7 @@ book9 = Book.create!(
   <p>¿Cuánta verdad hay en lo que se ha escrito y reescrito sobre Delmira? ¿Quién fue realmente Enrique Job Reyes, su marido? ¿Qué papel jugó el entorno familiar en su vida y su muerte?</p>
   <p>Basado en una investigación periodística, Serás mía o de nadie rescata documentos inéditos de Delmira y la familia Agustini que arrojan luz sobre hechos silenciados durante cien años.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/161384-seras-mia-o-de-nadie-9789974881907',
   user: user)
 book9.photo.attach(io: File.open('app/assets/images/Book_Covers/Seras mia o de nadie.jpg'), filename: 'image.jpg')
 book9.cover.attach(io: File.open('app/assets/images/Portadas/seras_mia_o_de_nadie.jpg'), filename: 'image.jpg')
@@ -136,6 +143,7 @@ horizonte, mientras quienes no adhieren a sus gobiernos totalitarios son persegu
 <p>Tres hombres y una batalla es una investigación periodística en la que Diego Fischer, con documentos que ven la luz por primera vez, retrata un Uruguay cuyos gobernantes, al tiempo que pregonaban su solidaridad con las naciones invadidas por Hitler, cerraban las puertas a las víctimas del nazismo.</p>
 <p>Tres hombres y una batalla es también una historia de solidaridad y generosidad que confirma que, aun en las épocas más oscuras de la humanidad, existen hombres capaces de gestos grandiosos.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160544-tres-hombres-y-una-batalla-9789974723184',
   user: user)
 book10.photo.attach(io: File.open('app/assets/images/Book_Covers/Tres hombres y una batalla.jpg'), filename: 'image.jpg')
 book10.cover.attach(io: File.open('app/assets/images/Portadas/tres_hombres_y_una_batalla.jpg'), filename: 'image.jpg')
@@ -149,6 +157,7 @@ book11 = Book.create!(
   <p><i>Carlota Ferreira. Retrato de una mujer que se inventó</i> es una investigación periodística de Diego Fischer que derriba varias leyendas y mitos. Es el descubrimiento de un mundo misterioso, por momentos sórdido y cruel, cuyos protagonistas parecen haberse puesto de acuerdo en sembrar acertijos y cubrir los hechos con una pátina amable para que la historia los recogiera con una mirada ingenua.</p>
   <p>Aquí está la historia de una mujer cuya existencia, real o ficticia, el lector deberá descubrir. Es también el retrato que Juan Manuel Blanes jamás pintó: el de un país que buscaba su identidad y una sociedad hipócrita que castigaba a sus mejores talentos.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160724-carlota-ferreira-9789974732711',
   user: user)
 book11.photo.attach(io: File.open('app/assets/images/Book_Covers/Carlota Ferreira.jpg'), filename: 'image.jpg')
 book11.cover.attach(io: File.open('app/assets/images/Portadas/carlota_ferreira.png'), filename: 'image.jpg')
@@ -163,6 +172,7 @@ book12 = Book.create!(
   <p>Mejor callar es una nueva investigación de Diego Fischer, en la que el escritor deja al descubierto hechos, personajes y tramas que permanecieron cubiertos por un manto de silencio durante más de un siglo. Mejor callar es el retrato de una sociedad cruel e hipócrita, que condenaba severamente a las mujeres que rompían las estrictas normas de la época o intentaban rebelarse contra ellas.</p>
   <p>Basado en documentos inéditos hasta hoy, el autor va encastrando las piezas de un complicado puzle en el que varias de las familias más distinguidas y acaudaladas de ambas orillas del Río de la Plata fueron víctimas y victimarias de dos crímenes cuyos reales motivos la Historia prefirió callar.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/160914-mejor-callar-9789974741690',
   user: user)
 book12.photo.attach(io: File.open('app/assets/images/Book_Covers/Mejor callar.jpg'), filename: 'image.jpg')
 book12.cover.attach(io: File.open('app/assets/images/Portadas/mejor-callar.jpg'), filename: 'image.jpg')
@@ -178,6 +188,7 @@ Pertenecía a una familia acomodada, era joven y hermosa. Poco después se compr
 <p>¿Cuál fue el destino de este amor? ¿Por qué Julio Herrera evitó formar una familia? ¿Qué secretos se esconden detrás de esta figura que fue presidente constitucional de la República y que pasó a la historia como el hombre que reinstauró, en el siglo XIX, los gobiernos civiles luego de quince años de dictaduras militares? ¿Cómo era verdaderamente Elvira, esa mujer paciente que dedicó su vida a amar y acompañar a un hombre que anteponía la política a su vida personal?</p>
 <p>Hay quienes afirman que la de Elvira y Julio fue la historia romántica por excelencia en el Uruguay del siglo XIX.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/161337-el-sentir-de-las-violetas-9789974881716',
   user: user)
 book13.photo.attach(io: File.open('app/assets/images/Book_Covers/El Sentir de las violetas.jpg'), filename: 'image.jpg')
 book13.cover.attach(io: File.open('app/assets/images/Portadas/sentir_de_las_violetas.png'), filename: 'image.jpg')
@@ -191,6 +202,7 @@ book14 = Book.create!(
 <p>Esposa cómplice, madre atenta, pilar del mundo que rodeaba a Saravia, doña Cándida fue una mujer fuerte, decidida, de convicciones claras y ternura infinita. Pero también fue la mujer que no titubeó en tomar las riendas de El Cordobés en los tiempos de guerra y manejar con mano segura los negocios familiares. Sin su apoyo incondicional y su trabajo, Aparicio no habría logrado llevar a cabo su hazaña patriótica. Ella significaba en la vida del caudillo la estabilidad, el amor y el sereno remanso imprescindible tras la batalla.</p>
 <p>Este libro traza con lucidez y precisión cómo Saravia fue convirtiéndose en un protagonista clave de la vida del país. Revela detalles nunca antes señalados sobre aquella gesta, gracias a una investigación profunda de la que surgen nuevos datos y documentos antes desconocidos. A través de una narración atrapante, el lector se asomará al nítido relato de una época fundamental de nuestra historia.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/161734-dona-candida-saravia-9789974892781',
   user: user)
 book14.photo.attach(io: File.open('app/assets/images/Book_Covers/dona-candida-saravia.jpg'), filename: 'image.jpg')
 book14.cover.attach(io: File.open('app/assets/images/Portadas/candida_saravia.jpg'), filename: 'image.jpg')
@@ -204,6 +216,7 @@ De esta forma dio inicio uno de los atracos más soprendentes de la historia uru
 <p>Este libro relata con pormenores la historia de ese robo que marcó un antes y un después en la sociedad uruguaya. Una familia inmensamente rica, que sin embargo no hacía ostentación de su poder, era víctima de un millonario robo, y como consecuencia de éste el propio Luis Mailhos terminó procesado penalmente.</p>
 <p>Con precisión de investigador y vértigo de novelista, Diego Fischer construye una trama sólida y atrapante que guiará al lector por el vértigo de una época de profundos cambios sociales, recreando la compleja urdimbre que compone nuestra identidad y señalando sus contradicciones.</p>',
   awards: '',
+  link: 'https://www.penguinlibros.com/uy/biografias/162248-el-robo-de-la-historia-9789974903432',
   user: user)
 book15.photo.attach(io: File.open('app/assets/images/Book_Covers/El Robo de la Historia.jpg'), filename: 'image.jpg')
 book15.cover.attach(io: File.open('app/assets/images/Portadas/robo_de_la_historia.jpg'), filename: 'image.jpg')
@@ -216,6 +229,7 @@ book16 = Book.create!(
 <p>La presencia de Uruguay en la fugaz República española y en el comienzo de la guerra civil fue mucho mayor de lo que la historia nos ha mostrado. Con documentación inédita, recabada en ambos lados del Atlántico, Diego Fischer relata en Cuando todo pase las tragedias, intrigas y amores que protagonizaron varios uruguayos en una España dividida, empobrecida y azotada por la crisis que desembocaría en una guerra fratricida.</p> 
 <p>Cuando todo pase es una muy lograda pintura de época que comienza con la partida del lujoso transatlántico Giulio Cesare del puerto de Montevideo rumbo a Barcelona, con la ilusión de varios de sus pasajeros de conquistar Europa. Al llegar a España, en las calles de Madrid percibirán la incertidumbre y la desolación, y sufrirán las intrigas del poder que domina un país decadente que seguiría enviando a América a miles de sus hijos.</p> ',
   awards: '',
+  link: 'https://www.planetadelibros.com.uy/libro-cuando-todo-pase/328824',
   user: user)
 book16.photo.attach(io: File.open('app/assets/images/Book_Covers/Cuando todo pase.jpg'), filename: 'image.jpg')
 book16.cover.attach(io: File.open('app/assets/images/Portadas/cuando_todo_pase.jpg'), filename: 'image.jpg')
