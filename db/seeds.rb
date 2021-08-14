@@ -260,4 +260,64 @@ book17.cover.attach(io: File.open('app/assets/images/Portadas/secretos-de-un-jar
 
 puts 'Books finished'
 
+puts 'Creating projects...'
+
+project1 = Project.create!(
+  title: 'Cien años Punta del Este - Al este de la historia',
+  type: 'Documental',
+  year: '2007',
+  description:'<p>Cien años es un documental que narra la historia de Punta del Este. Dirigido y producido por el periodista  Diego Fischer,  aporta una mirada diferente sobre  el balneario.</p>
+<p>Testimonios de antiguos veraneantes  y de actuales residentes,  se entrecruzan con  fotografías y películas de época inéditas, que pintan  un lugar único y privilegiado que ha sobrevivido a las efímeras modas de verano. Cien años, muestra a una Punta del Este silenciosa   y oculta  : la de los verdaderos pioneros. El balneario que supo dar cabida y refugio a poetas y escritores como Rafael Alberti y Adolfo Bioy Casares. O inspiró a músicos como Vinicius de Moraes o Astor Piazzolla. El lugar en el que se libraron batallas diplomáticas cruciales en los tiempos de la Guerra Fría. El sitio en el que Wilson Ferreira y Susana Sienra, se conocieron, se enamoraron y vieron por última vez antes de partir al exilio. El paisaje que  Lussich forestó para serenar al viento. El reducto que  la aristocracia argentina adoptó como propio...</p>
+<p>Argentinos, uruguayos, brasileños y europeos recorren, con sus relatos, el ayer y el hoy de una Punta del Este mágica. Todos ellos escribieron y protagonizaron la más bella historia del lugar y, tal vez, la menos conocida.</p>
+<p>Son más de 20  relatos que se suceden en un documental, en el que las imágenes del ayer y el hoy desfilan al son de una banda musical  , especialmente compuesta para el filme.</p>
+<p>Cien años está basado en el libro homónimo: Cien años-Al este de la  historia  del uruguayo Diego Fischer y  la argentina Silvia Pisani y que lleva ya más de cuatro ediciones vendidas.</p>',
+  user: user)
+project1.photo.attach(io: File.open('app/assets/images/Projects/100.jpg'), filename: 'image.jpg')
+
+project2 = Project.create!(
+  title: 'Historias, relatos y sueños',
+  type: 'Documental',
+  year: '2007',
+  description:'<p>"Historias, relatos y sueños" es un homenaje a los hombres y mujeres que
+-150 años atrás- llegaron al Uruguay desde los distintos cantones suizos
+para fundar Colonia Suiza.</p>
+<p>Es también una demostración de que la inmigración suiza no se ha limitado a los tiempos fundacionales de Nueva Helvecia, sino que ha tenido una continuidad en el tiempo que llega a nuestros días.</p>
+<p>Filmado en Uruguay y Suiza, el documental recoge testimonios de descendientes directos de integrantes de las familias que llegaron en 1861 a Colonia y de personas que siguen viviendo hoy en las casas solariegas de aquellos inmigrantes.</p>',
+  user: user)
+project2.photo.attach(io: File.open('app/assets/images/Projects/historias-relatos-suenos.jpg'), filename: 'image.jpg')
+
+project3 = Project.create!(
+  title: 'Algo interesante que contar',
+  type: 'Documental',
+  year: '2014',
+  description:'<p>Documental realizado por Diego Fischer, estrenado en el año 2014, aporta películas de época inéditas, que muestran a figuras del arte y de la política del Río de la Planta en la década de 1960. Beatriz Haedo es una de las principales entrevistadas.</p>
+<p>La Azotea, desde su creación, a comienzos de la década de 1940, fue un lugar donde se registraron hechos políticos y culturales de resonancia que trascendieron el Río de la Plata y repercutieron en el mundo entero. Allí, tras el derrocamiento de Juan Domingo Perón, en 1955, se daban cita peronistas y antiperonistas en reuniones organizadas por Haedo, que hubieran sido imposibles de imaginar y mucho menos concretar en la convulsionada Argentina de aquellos años.
+También fue en La Azotea, donde se libró una de las batallas diplomáticas más importantes de la Guerra Fría. Sucedió en 1961, durante la reunión del Consejo Interamericano Económico y Social (CIES) en el que el gobierno de John Kennedy lanzó la Alianza para el Progreso y Cuba, en la persona del “Ché” Guevara, presentó otra propuesta. Personalidad esta última que también visitó La Azotea y fue recibido por Víctor Haedo.</p>',
+  user: user)
+# project3.photo.attach(io: File.open('app/assets/images/Projects/.jpg'), filename: 'image.jpg')
+
+project4 = Project.create!(
+  title: 'La Comedia de China',
+  type: 'Muestra',
+  year: '2016',
+  description:'<p>Un homenaje a una de las artistas más brillantes que ha dado el Uruguay, en una muestra que reúne materiales inéditos y objetos personales del período 1948-1959 en el que fue primera figura de la Comedia Natural. Ese tiempo China lo definió como los mejores años de su vida.</p>',
+  user: user)
+# project4.photo.attach(io: File.open('app/assets/images/Projects/.jpg'), filename: 'image.jpg')
+
+project5 = Project.create!(
+  title: 'Al Encuentro de las Tres Marías',
+  type: 'Obra de teatro',
+  year: '2010',
+  description:'<p>Versión teatral de uno de los más grandes éxitos editoriales recientes, la novela homónima de Diego Fischer sobre la vida de Juana de Ibarbourou. La obra nos muestra a la poetisa más allá del mito, en una parábola de éxito, decadencia y dolor que tiene mucho que ver con la historia del Uruguay del siglo XX. Victoria Rodríguez interpreta a Juana joven, y la actriz Nidia Telles a la Juana de la madurez. Por su parte, Humberto de Vargas recorre 17 personajes masculinos que jalonaron la vida de la poetisa.</p>',
+  user: user)
+# project5.photo.attach(io: File.open('app/assets/images/Projects/.jpg'), filename: 'image.jpg')
+
+project6 = Project.create!(
+  title: 'Qué Tupé',
+  type: 'Obra de teatro',
+  year: '2011',
+  description:'<p>Hace 90 años, Uruguay se conmovió con la muerte de Washington Beltrán en un duelo a pistola. Su contrincante en el lance fue el dos veces ex presidente de la República José Batlle y Ordóñez. El periodista y escritor Diego Fischer se sumergió en esta historia y de su investigación nació el libro Qué Tupé, que mezcla ficción con historia y acerca nuevos datos sobre este hecho. En este exitoso libro se basa la obra.</p>',
+  user: user)
+# project6.photo.attach(io: File.open('app/assets/images/Projects/.jpg'), filename: 'image.jpg')
+
 puts 'All done'
