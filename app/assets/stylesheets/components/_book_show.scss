@@ -116,3 +116,13 @@
   -ms-transform: rotate(5deg) skew(-35deg);
   transform: rotate(5deg) skew(-35deg);
 }
+
+.booktrailer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    transform: scale(0.9)
+  }
+}

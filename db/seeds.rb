@@ -116,6 +116,7 @@ book8 = Book.create!(
   <p>¿Cuánto conocemos realmente de China Zorrilla? ¿Cuántos personajes encierra esa señora paqueta, que pudo haberse casado con un hombre de su misma clase y de fortuna, formar un hogar tradicional, tener hijos y envejecer viendo crecer a sus nietos? Se sabe: por sus venas corre sangre de artista, de su abuelo poeta y de su padre escultor, pero ¿fue eso suficiente para que, siendo una adolescente, eligiera una profesión muy mal vista en su época? Poseedora de ese don especial que solo tienen los elegidos, hizo reír con su humor refinado y conmovió en papeles dramáticos. Recorrió los escenarios más importantes del mundo para mostrar su arte y su talento. En todos cosechó aplausos y la aprobación de la crítica. ¿Qué costo tuvieron esos aplausos y esas críticas? El cine, la televisión y la radio la convirtieron en una figura de inmensa popularidad. ¿Qué dejó por el camino? ¿Qué fue de sus amores?</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/160056-a-mi-me-aplauden-9789974701229',
+  booktrailer: 'https://www.youtube.com/watch?v=WQ7fmdmjQKU',
   user: user)
 book8.photo.attach(io: File.open('app/assets/images/Book_Covers/A mi me aplauden.jpg'), filename: 'image.jpg')
 book8.cover.attach(io: File.open('app/assets/images/Portadas/a_mi_me_aplauden.jpg'), filename: 'image.jpg')
@@ -129,6 +130,7 @@ book9 = Book.create!(
   <p>Basado en una investigación periodística, Serás mía o de nadie rescata documentos inéditos de Delmira y la familia Agustini que arrojan luz sobre hechos silenciados durante cien años.</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/161384-seras-mia-o-de-nadie-9789974881907',
+  booktrailer: 'https://www.youtube.com/watch?v=nzNFlZODmzU',
   user: user)
 book9.photo.attach(io: File.open('app/assets/images/Book_Covers/Seras mia o de nadie.jpg'), filename: 'image.jpg')
 book9.cover.attach(io: File.open('app/assets/images/Portadas/seras_mia_o_de_nadie.jpg'), filename: 'image.jpg')
@@ -144,6 +146,7 @@ horizonte, mientras quienes no adhieren a sus gobiernos totalitarios son persegu
 <p>Tres hombres y una batalla es también una historia de solidaridad y generosidad que confirma que, aun en las épocas más oscuras de la humanidad, existen hombres capaces de gestos grandiosos.</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/160544-tres-hombres-y-una-batalla-9789974723184',
+  booktrailer: 'https://www.youtube.com/watch?v=SDGoe6l2laY',
   user: user)
 book10.photo.attach(io: File.open('app/assets/images/Book_Covers/Tres hombres y una batalla.jpg'), filename: 'image.jpg')
 book10.cover.attach(io: File.open('app/assets/images/Portadas/tres_hombres_y_una_batalla.jpg'), filename: 'image.jpg')
@@ -158,6 +161,7 @@ book11 = Book.create!(
   <p>Aquí está la historia de una mujer cuya existencia, real o ficticia, el lector deberá descubrir. Es también el retrato que Juan Manuel Blanes jamás pintó: el de un país que buscaba su identidad y una sociedad hipócrita que castigaba a sus mejores talentos.</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/160724-carlota-ferreira-9789974732711',
+  booktrailer: 'https://www.youtube.com/watch?v=gsHIDZSVMD4',
   user: user)
 book11.photo.attach(io: File.open('app/assets/images/Book_Covers/Carlota Ferreira.jpg'), filename: 'image.jpg')
 book11.cover.attach(io: File.open('app/assets/images/Portadas/carlota_ferreira.png'), filename: 'image.jpg')
@@ -173,6 +177,7 @@ book12 = Book.create!(
   <p>Basado en documentos inéditos hasta hoy, el autor va encastrando las piezas de un complicado puzle en el que varias de las familias más distinguidas y acaudaladas de ambas orillas del Río de la Plata fueron víctimas y victimarias de dos crímenes cuyos reales motivos la Historia prefirió callar.</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/160914-mejor-callar-9789974741690',
+  booktrailer: 'https://www.youtube.com/watch?v=Rzxv2geSmNU',
   user: user)
 book12.photo.attach(io: File.open('app/assets/images/Book_Covers/Mejor callar.jpg'), filename: 'image.jpg')
 book12.cover.attach(io: File.open('app/assets/images/Portadas/mejor-callar.jpg'), filename: 'image.jpg')
@@ -189,6 +194,7 @@ Pertenecía a una familia acomodada, era joven y hermosa. Poco después se compr
 <p>Hay quienes afirman que la de Elvira y Julio fue la historia romántica por excelencia en el Uruguay del siglo XIX.</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/161337-el-sentir-de-las-violetas-9789974881716',
+  booktrailer: 'https://www.youtube.com/watch?v=TuFPKwCyiTk',
   user: user)
 book13.photo.attach(io: File.open('app/assets/images/Book_Covers/El Sentir de las violetas.jpg'), filename: 'image.jpg')
 book13.cover.attach(io: File.open('app/assets/images/Portadas/sentir_de_las_violetas.png'), filename: 'image.jpg')
@@ -203,6 +209,7 @@ book14 = Book.create!(
 <p>Este libro traza con lucidez y precisión cómo Saravia fue convirtiéndose en un protagonista clave de la vida del país. Revela detalles nunca antes señalados sobre aquella gesta, gracias a una investigación profunda de la que surgen nuevos datos y documentos antes desconocidos. A través de una narración atrapante, el lector se asomará al nítido relato de una época fundamental de nuestra historia.</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/161734-dona-candida-saravia-9789974892781',
+  booktrailer: 'https://www.youtube.com/watch?v=UTAy46eK0oM',
   user: user)
 book14.photo.attach(io: File.open('app/assets/images/Book_Covers/dona-candida-saravia.jpg'), filename: 'image.jpg')
 book14.cover.attach(io: File.open('app/assets/images/Portadas/candida_saravia.jpg'), filename: 'image.jpg')
@@ -217,6 +224,7 @@ De esta forma dio inicio uno de los atracos más soprendentes de la historia uru
 <p>Con precisión de investigador y vértigo de novelista, Diego Fischer construye una trama sólida y atrapante que guiará al lector por el vértigo de una época de profundos cambios sociales, recreando la compleja urdimbre que compone nuestra identidad y señalando sus contradicciones.</p>',
   awards: '',
   link: 'https://www.penguinlibros.com/uy/biografias/162248-el-robo-de-la-historia-9789974903432',
+  booktrailer: 'https://www.youtube.com/watch?v=orTQZVYrTws',
   user: user)
 book15.photo.attach(io: File.open('app/assets/images/Book_Covers/El Robo de la Historia.jpg'), filename: 'image.jpg')
 book15.cover.attach(io: File.open('app/assets/images/Portadas/robo_de_la_historia.jpg'), filename: 'image.jpg')
@@ -230,9 +238,25 @@ book16 = Book.create!(
 <p>Cuando todo pase es una muy lograda pintura de época que comienza con la partida del lujoso transatlántico Giulio Cesare del puerto de Montevideo rumbo a Barcelona, con la ilusión de varios de sus pasajeros de conquistar Europa. Al llegar a España, en las calles de Madrid percibirán la incertidumbre y la desolación, y sufrirán las intrigas del poder que domina un país decadente que seguiría enviando a América a miles de sus hijos.</p> ',
   awards: '',
   link: 'https://www.planetadelibros.com.uy/libro-cuando-todo-pase/328824',
+  booktrailer: 'https://www.youtube.com/watch?v=mEDZ84jleG8',
   user: user)
 book16.photo.attach(io: File.open('app/assets/images/Book_Covers/Cuando todo pase.jpg'), filename: 'image.jpg')
 book16.cover.attach(io: File.open('app/assets/images/Portadas/cuando_todo_pase.jpg'), filename: 'image.jpg')
+
+book17 = Book.create!(
+  title: 'Secretos de un jardín',
+  subtitle: 'Historias y leyendas de Carrasco',
+  year: '2019',
+  description: '<p>En "Secretos de un jardín", Diego Fischer nos propone un recorrido por la historia de Carrasco. A través de un relato cautivante y ameno, el autor va desgranando pequeñas historias, grandes personajes y leyendas del balneario que, con el transcurso de los años, devino en e barrio jardín más hermoso del Cono Sur.</p>
+<p>La visión de sus impulsores, la edificación de los primeros chalés, la visita de los personajes ilustres y de otras figuras tan polémicas como famosas, acontecimientos que conmovieron al mundo y tuvieron su epicentro en la zona, van surgiendo como telón de fondo de historias cotidianas y de leyendas que se han tejido a lo largo de más de un siglo.</p>
+<p>El lector sabrá como y por qué se edificaron algunas de las mansiones más emblemáticas del balneario. Se enterará de los entretelones de la visita del poeta Federico García Lorca, dos años antes de ser fusilado en Granada. De cómo Carrasco fue la escala previa al desembarco triunfal de Eva Perón a su regreso de Europa, y por qué resultó la antesala del nacimiento de Evita, el mito.</p>
+<p>Con abundantes fotografías de época, que muestran un balneario de cuento y de cuentos, "Secretos de un jardín" es el viaje a un tiempo que hoy parece aún más lejano de lo que realmente es. Secretos que el mar intentó borrar, pero este libro los recupera y devela sin afán nostálgico. Hoy otras historias y otras leyendas se están escribiendo para ser los secretos del jardín del mañana.</p>',
+  awards: '',
+  user: user
+  )
+book17.photo.attach(io: File.open('app/assets/images/Book_Covers/secretos-de-un-jardin.jpg'), filename: 'image.jpg')
+book17.cover.attach(io: File.open('app/assets/images/Portadas/secretos-de-un-jardin.jpg'), filename: 'image.jpg')
+
 
 puts 'Books finished'
 
