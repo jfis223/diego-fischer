@@ -30,6 +30,8 @@
   padding-right: 20px;
 
   @media (max-width: 600px) {
+    max-width: 90%;
+    margin: auto;
     padding-top: 0px;
     padding-right: 0px;
     text-align: center;
