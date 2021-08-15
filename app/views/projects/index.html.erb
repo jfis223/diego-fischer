@@ -1,0 +1,32 @@
+<h2 class="title">Otros Proyectos</h2>
+
+<div class="list">
+    <% @projects.reverse.each do |project| %>
+      <%= link_to project_path(project) do %>
+        <div class="project_container">
+                <div class="project_image">
+                  <% if project.photo.attached? %>
+                  <%= cl_image_tag project.photo.key, width: 375, height: 269, crop: "fill" %>
+                  <% else %>
+                  <%= "" %>
+                  <% end  %>
+                </div>
+                <div class="project_text">
+                  <div class="project_title">
+                   <h3><%= project.title %></h3>
+                    </div>
+                  <div class="project_type">
+                    <h4><%= project.region %></h4>
+                    </div>
+                  <div class="project_year">
+                    <h5>
+                      <%= project.year %>
+                    </h5>
+                    </div>
+                </div>
+          </div>
+      <% end %>
+    <% end %>
+
+</div>
+

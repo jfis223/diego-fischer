@@ -1,13 +1,13 @@
 class ProjectsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :set_task, only: [:edit, :update, :destroy]
 
   def index
-    @projects = Project.all
+    @projects = Project.all.sort_by(&:year)
   end
 
   def show
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
 
   def new
@@ -44,6 +44,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :year, :description, :type, :photo)
+    params.require(:project).permit(:title, :year, :description, :region, :trailer, :photo)
   end
 end

@@ -1,0 +1,37 @@
+  <div class="show-title-project">
+    <h1> <%= @project.title %></h1>
+    <h3> <% if @project.region %>
+        <%= @project.region %>
+      <% else %>
+        <%= "" %>
+      <% end  %>
+    </h3>
+    <h4><%= @project.year %></h4>
+  </div>
+
+  <div class="project-image">
+      <% if @project.photo.attached? %>
+        <%= cl_image_tag @project.photo.key, class: "project_img", alt: @project.title, width: 1000, height: 500, crop: "fill", gravity: "auto" %>
+      <% else %>
+        <%= "" %>
+      <% end  %>
+  </div>
+
+<div class="description">
+  <%= sanitize @project.description %>
+</div>
+
+<% if @project.trailer  %>
+  <% regex = /(?:v=)([^&]+)/  %>
+  <%  video_url = @project.trailer.match(regex) %>
+  <div class="booktrailer">
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/<%= video_url[1] %>"
+      title="<%= @project.title %>" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+      </iframe>
+  </div>
+<% else  %>
+  <%= "" %>
+<% end %>
