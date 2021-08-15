@@ -8,6 +8,9 @@
 
 .bio-cover {
   height: 500px;
+  max-width: 90%;
+  object-fit: cover;
+  object-position: left;
   border-radius: 10px;
   border: 1px solid #979DAC;
   display: block;

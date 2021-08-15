@@ -43,9 +43,11 @@
   @media (max-width: 600px) {
     width: 400px;
     height: 200px;
-    margin: 10px;
+    margin: auto;
     display: flex;
     justify-content: center;
+    max-width: 90%;
+    object-fit: cover;
   }
 }
 
