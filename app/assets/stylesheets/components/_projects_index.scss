@@ -8,7 +8,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+  margin: 2rem 0;
 
   @media (max-width: 600px) {
     flex-direction: column;
@@ -23,11 +25,50 @@
 
 .project_text {
   margin-left: 4rem;
+  color: white;
+  transition: all 1s ease-out;
+
 
     @media (max-width: 600px) {
     margin-left: 0rem;
     text-align: center;
     margin-top: 10px;
+
+    > .project_line {
+      display: none;
+    }
+  }
+
+  > h3, h4, h5 {
+    color: inherit;
+  }
+
+  > .project_title {
+    > h3 {
+    color: white;
+    transition: all 1s ease-out;
+    }
+  }
+
+  > .project_line {
+    border-bottom: 5px solid white;
+    width: 10rem;
+    margin-bottom: 1rem;
+    transition: all 1s ease-out;
+  }
+
+  &:hover{
+    color: #979DAC;
+    > .project_line {
+      width: 15rem;
+      border-bottom: 5px solid #979DAC;
+    }
+
+    .project_title {
+      > h3 {
+      color: #979DAC!important;
+      }
+    }
   }
 }
 

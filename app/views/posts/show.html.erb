@@ -1,0 +1,15 @@
+  <div class="show-title-project">
+    <h1> <%= @post.title %></h1>
+    <h4><%= @post.date %></h4>
+    <div class="btn">
+    <% if @post.reference %>
+      <a class="buy-btn" href="<%= @post.reference %>"><h5>Ver publicación original</h5></a>
+    <% else %>
+      ''
+    <% end %>
+  </div>
+  </div>
+
+<div class="description">
+  <%= sanitize @post.content %>
+</div>

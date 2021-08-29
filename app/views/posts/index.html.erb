@@ -1,0 +1,23 @@
+<h2 class="title">Noticias</h2>
+
+<div class="list">
+    <% @posts.each do |post| %>
+      <%= link_to post_path(post) do %>
+        <div class="project_container">
+                <div class="project_text">
+                  <div class="project_line"></div>
+                  <div class="project_title">
+                   <h3><%= post.title %></h3>
+                    </div>
+                  <div class="project_year">
+                    <h5>
+                      <%= post.date %>
+                    </h5>
+                    </div>
+                </div>
+          </div>
+      <% end %>
+    <% end %>
+
+</div>
+

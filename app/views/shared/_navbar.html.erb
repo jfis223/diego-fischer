@@ -23,7 +23,11 @@
                 Otros Proyectos
               <% end %>
             </li>
-            <li class="nav__item"><a href="#">Noticias</a></li>
+            <li class="nav__item">
+              <%= link_to posts_path do %>
+                Noticias
+              <% end %>
+            </li>
             <li class="nav__item"><a href="#">Contacto</a></li>
           </ul>
         </nav>
