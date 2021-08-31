@@ -78,6 +78,7 @@ book5 = Book.create!(
   year: '2008',
   description: '<p>Nada fue como se contó. O casi nada. Una mujer hermosa y con talento que antes de cumplir los treinta años logró la fama y la gloria. Una mujer que en el ocaso de su vida decidió contemplar el mundo a través de los vidrios de una ventana. Hasta aquí la historia conocida de Juana de Ibarbourou, pero para completarla habría que hablar de una mujer inteligente y ambiciosa que supo siempre adónde quería llegar. Alguien que se enamoró más de una vez y vivió romances prohibidos. Una víctima de la violencia doméstica. ¿Una víctima de su hijo? ¿Una víctima de su entorno? Adicta a las drogas, la felicidad fue para ella un estado pasajero, que auguraba el dolor y la angustia que nunca la abandonaron. Y aun en el infierno de morfina, violencia y desamor en el que transcurrió la mayor parte de su vida, escribió versos magistrales y prosas memorables.</p>',
   awards: 'Libro de Oro en 2009',
+  booktrailer: 'https://www.youtube.com/watch?v=ZNF_J_qu0Cg',
   link: 'https://www.penguinlibros.com/uy/biografias/160091-al-encuentro-de-las-tres-marias-9789974701625',
   user: user)
 book5.photo.attach(io: File.open('app/assets/images/Book_Covers/Al encuentro de las tres marías.jpg'), filename: 'image.jpg')
@@ -284,6 +285,7 @@ project2 = Project.create!(
 para fundar Colonia Suiza.</p>
 <p>Es también una demostración de que la inmigración suiza no se ha limitado a los tiempos fundacionales de Nueva Helvecia, sino que ha tenido una continuidad en el tiempo que llega a nuestros días.</p>
 <p>Filmado en Uruguay y Suiza, el documental recoge testimonios de descendientes directos de integrantes de las familias que llegaron en 1861 a Colonia y de personas que siguen viviendo hoy en las casas solariegas de aquellos inmigrantes.</p>',
+  trailer: 'https://www.youtube.com/watch?v=i-5K1dR9U_A',
   user: user)
 project2.photo.attach(io: File.open('app/assets/images/Projects/historias-relatos-suenos.jpg'), filename: 'image.jpg')
 
@@ -312,7 +314,7 @@ project5 = Project.create!(
   region: 'Obra de teatro',
   year: '2010',
   description:'<p>Versión teatral de uno de los más grandes éxitos editoriales recientes, la novela homónima de Diego Fischer sobre la vida de Juana de Ibarbourou. La obra nos muestra a la poetisa más allá del mito, en una parábola de éxito, decadencia y dolor que tiene mucho que ver con la historia del Uruguay del siglo XX. Victoria Rodríguez interpreta a Juana joven, y la actriz Nidia Telles a la Juana de la madurez. Por su parte, Humberto de Vargas recorre 17 personajes masculinos que jalonaron la vida de la poetisa.</p>',
-  trailer: 'https://www.youtube.com/watch?v=8zT9lHyDw90',
+  trailer: 'https://www.youtube.com/watch?v=RtDDDZOvgeE',
   user: user)
 project5.photo.attach(io: File.open('app/assets/images/Projects/juana-teatro.jpg'), filename: 'image.jpg')
 
