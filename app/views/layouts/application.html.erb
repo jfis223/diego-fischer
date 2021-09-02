@@ -10,10 +10,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body style="margin-top: 150px;">
+  <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <div style="max-width: 1000px; margin: auto;">
+    <div class="main">
       <%= yield %>
     </div>
     <%= render 'shared/footer' %>

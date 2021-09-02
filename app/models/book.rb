@@ -6,4 +6,5 @@ class Book < ApplicationRecord
   validates :year, presence: true
   has_one_attached :photo
   has_one_attached :cover
+  has_rich_text :description
 end

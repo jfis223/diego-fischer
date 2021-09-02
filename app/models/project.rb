@@ -5,4 +5,5 @@ class Project < ApplicationRecord
   validates :title, presence: true
   validates :description, presence: true
   has_one_attached :photo
+  has_rich_text :description
 end

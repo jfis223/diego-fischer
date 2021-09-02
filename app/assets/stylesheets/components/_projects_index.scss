@@ -10,17 +10,23 @@
   align-items: center;
   padding-bottom: 2rem;
   border-bottom: 1px solid white;
-  margin: 2rem 0;
+  margin: 2rem;
 
   @media (max-width: 600px) {
     flex-direction: column;
     padding: 10px;
+    width: 300px;
   }
 }
 
 .project_image img {
   border-radius: 15px;
   border: 1px solid white;
+  @media (max-width: 600px) {
+    width: 275px;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .project_text {
@@ -92,10 +98,7 @@
   }
 }
 
-.project_type {
-
-}
-
-.project_year {
-
+.project_container > .fa-signature {
+  color: white;
+  font-size: 5rem;
 }

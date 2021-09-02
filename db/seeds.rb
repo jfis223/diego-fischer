@@ -8,6 +8,7 @@
 
 Book.delete_all
 Project.delete_all
+Post.delete_all
 User.delete_all
 
 puts 'Cleaning up...'

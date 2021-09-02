@@ -12,5 +12,15 @@
 @import "components/index";
 @import "pages/index";
 
+@import "actiontext";
+
+@import "trix/dist/trix";
+
+
 
 body {background: #001845}
+
+//simple_form input for rich_text_area hight
+trix-editor.form-control {
+  min-height: 500px;
+}

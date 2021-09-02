@@ -34,3 +34,9 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   navBar();
 });
+
+require("trix")
+require("@rails/actiontext")
+
+import "trix"
+import "@rails/actiontext"
