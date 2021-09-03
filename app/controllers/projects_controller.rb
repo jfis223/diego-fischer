@@ -1,6 +1,5 @@
 class ProjectsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  before_action :set_task, only: [:edit, :update, :destroy]
 
   def index
     @projects = Project.all.sort_by(&:year)
@@ -26,17 +25,17 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
 
   def update
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
     @project.update(project_params)
     redirect_to project_path(@project)
   end
 
   def destroy
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
     @project.destroy
     redirect_to projects_path
   end

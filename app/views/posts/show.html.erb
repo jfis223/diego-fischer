@@ -13,3 +13,16 @@
 <div class="description">
   <%= @post.content %>
 </div>
+
+<div class="admin-wrapper">
+  <% if user_signed_in? %>
+      <%= link_to edit_post_path(@post) do %>
+        <h5 class="buy-btn admin">Modificar noticia</h5>
+      <% end %>
+      <%= link_to post_path(@post), method: :delete, data: { confirm: '¿Seguro que quieres borrar este proyecto?' } do %>
+        <h5 class="buy-btn admin">Borrar noticia</h5>
+      <% end %>
+    <% else %>
+    " "
+  <% end %>
+</div>

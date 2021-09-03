@@ -1,0 +1,15 @@
+<h2 class="title">Nuevo proyecto</h2>
+
+  <div class="input">
+
+    <%= simple_form_for (@project) do |p| %>
+      <%= p.input :title, placeholder: 'Los Notables', label: 'Título del proyecto' %>
+      <%= p.input :region, placeholder: 'Programa de TV, obra de teatro, muestra...', label: 'Tipo de proyecto' %>
+      <%= p.input :description, as: :rich_text_area, placeholder: 'Resumen', label: 'Descripción del proyecto' %>
+      <%= p.input :year, placeholder: '2021', label: 'Año de publicación' %>
+      <%= p.input :trailer, placeholder: 'Solo funciona YouTube', label: 'Trailer del proyecto o video' %>
+      <%= p.input :photo, as: :file, required: false, label: 'Foto del proyecto' %>
+      <div class="end"><%= p.submit 'Agregar proyecto nuevo', class: "btn" %></div>
+    <% end %>
+
+  </div>

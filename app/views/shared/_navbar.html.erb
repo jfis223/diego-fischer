@@ -28,7 +28,11 @@
                 Noticias
               <% end %>
             </li>
-            <li class="nav__item"><a href="#">Contacto</a></li>
+            <li class="nav__item">
+              <%= link_to new_contact_path do %>
+                Contacto
+              <% end %>
+            </li>
           </ul>
         </nav>
       </div>

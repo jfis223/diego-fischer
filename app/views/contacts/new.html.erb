@@ -1,0 +1,14 @@
+
+  <h2 style="text-align: center;">Contacto</h2>
+
+ <div class="input">
+
+  <%= simple_form_for (@contact) do |p| %>
+      <%= p.input :name, placeholder: 'Nombre Apellido', label: 'Nombre', required: true %>
+      <%= p.input :email, placeholder: 'nombre@gmail.com', label: 'Correo electrónico', required: true %>
+      <%= p.input :message, as: :rich_text_area, placeholder: 'Escribe aquí tu mensaje', label: 'Mensaje', required: true %>
+
+      <div class="end"><%= p.submit 'Enviar mensaje', class: "btn" %></div>
+    <% end %>
+
+</div>

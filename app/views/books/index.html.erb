@@ -28,3 +28,13 @@
     <% end %>
   </div>
 </div>
+
+<div class="admin-wrapper">
+  <% if user_signed_in? %>
+      <%= link_to new_book_path do %>
+        <h5 class="buy-btn admin">Agregar libro nuevo</h5>
+      <% end %>
+    <% else %>
+    " "
+  <% end %>
+</div>

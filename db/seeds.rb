@@ -306,7 +306,7 @@ project4 = Project.create!(
   region: 'Muestra',
   year: '2016',
   description:'<p>Un homenaje a una de las artistas más brillantes que ha dado el Uruguay, en una muestra que reúne materiales inéditos y objetos personales del período 1948-1959 en el que fue primera figura de la Comedia Natural. Ese tiempo China lo definió como los mejores años de su vida.</p>',
-  trailer: 'https://www.youtube.com/watch?v=LAnp3HA7tss',
+  trailer: 'https://www.youtube.com/watch?v=AUh9OmZ0QVE',
   user: user)
 project4.photo.attach(io: File.open('app/assets/images/Projects/comedia-de-china.jpg'), filename: 'image.jpg')
 

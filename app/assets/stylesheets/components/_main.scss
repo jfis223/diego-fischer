@@ -7,3 +7,37 @@ body {
   margin: auto;
   min-height: 1000px;
 }
+
+.input-wrapper {
+  max-width: 80%;
+  margin: auto;
+}
+
+.admin-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.admin:hover {
+  color: #001233;
+}
+
+p, label, ol, ul, li {
+  color: white;
+  text-align: justify;
+}
+
+.end{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trix-content {
+  color: white;
+}

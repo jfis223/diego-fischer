@@ -23,7 +23,7 @@
     <% if @book.link %>
       <a class="buy-btn" href="<%= @book.link %>"><h5>Comprar</h5></a>
     <% else %>
-      <h5 class="buy-btn" style="color: #7D8597">No disponible</h5>
+      <h5 class="buy-btn" style="pointer-events: none; cursor: not-allowed;">No disponible</h5>
     <% end %>
   </div>
   </div>
@@ -47,3 +47,16 @@
 <% else  %>
   <%= "" %>
 <% end %>
+
+<div class="admin-wrapper">
+  <% if user_signed_in? %>
+      <%= link_to edit_book_path(@book) do %>
+        <h5 class="buy-btn admin">Modificar libro</h5>
+      <% end %>
+      <%= link_to book_path(@book), method: :delete, data: { confirm: '¿Seguro que quieres borrar este libro?' } do %>
+        <h5 class="buy-btn admin">Borrar libro</h5>
+      <% end %>
+    <% else %>
+    " "
+  <% end %>
+</div>

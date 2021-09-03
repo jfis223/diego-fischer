@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  before_action :set_task, only: [:edit, :update, :destroy]
 
   def index
     @posts = Post.all.sort_by(&:date)
@@ -26,17 +25,17 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
   def update
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
     @post.update(post_params)
     redirect_to post_path(@post)
   end
 
   def destroy
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
     @post.destroy
     redirect_to posts_path
   end

@@ -35,3 +35,16 @@
 <% else  %>
   <%= "" %>
 <% end %>
+
+<div class="admin-wrapper">
+  <% if user_signed_in? %>
+      <%= link_to edit_project_path(@project) do %>
+        <h5 class="buy-btn admin">Modificar proyecto</h5>
+      <% end %>
+      <%= link_to project_path(@project), method: :delete, data: { confirm: '¿Seguro que quieres borrar este proyecto?' } do %>
+        <h5 class="buy-btn admin">Borrar proyecto</h5>
+      <% end %>
+    <% else %>
+    " "
+  <% end %>
+</div>

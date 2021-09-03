@@ -49,7 +49,8 @@
   padding: 20px;
 }
 
-.buy-btn {
+
+input[type="submit"], .buy-btn {
   text-align: end;
   width: fit-content;
   padding: 10px;
@@ -57,9 +58,11 @@
   margin-top: 10px;
   margin-bottom: 10px;
   transition: background-color 200ms linear;
+  color: white;
 
   &:hover{
     background-color: white;
+    color: #011845;
   }
 
   &:hover h5{

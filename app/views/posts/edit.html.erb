@@ -1,0 +1,13 @@
+<h2 class="title">Modificar noticia</h2>
+
+  <div class="input">
+
+    <%= simple_form_for (@post) do |p| %>
+      <%= p.input :title, placeholder: 'Al encuentro de las Tres Marías', label: 'Título de la noticia' %>
+      <%= p.input :content, as: :rich_text_area, placeholder: 'Contenido', label: 'Contenido' %>
+      <%= p.input :date, placeholder: 'Formato DD/MM/AAAA', label: 'Fecha de publicación' %>
+      <%= p.input :reference, placeholder: 'Link de referencia', label: 'Link de referencia' %>
+      <div class="end"><%= p.submit 'Modificar noticia', class: "btn" %></div>
+    <% end %>
+
+  </div>
