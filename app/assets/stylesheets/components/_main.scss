@@ -40,6 +40,12 @@ p, label, ol, ul, li {
 
 .trix-content {
   color: white;
+  ul, li {
+  list-style-type: disc;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  text-align: justify;
+  }
 }
 
 form {
