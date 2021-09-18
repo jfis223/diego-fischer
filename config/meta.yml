@@ -1,0 +1,5 @@
+meta_product_name: "Diego Fischer"
+meta_title: "Diego Fischer - Periodista y Escritor"
+meta_description: "Escritor y periodista, conductor y director del programa de televisión Los notables. Autor de más de dieciocho libros."
+meta_image: "Diego Fischer.jpg" # should exist in `app/assets/images/`
+twitter_account: "@diegofischer14"   # required for Twitter Cards

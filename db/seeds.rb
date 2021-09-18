@@ -10,12 +10,13 @@ Book.delete_all
 Project.delete_all
 Post.delete_all
 User.delete_all
+Slide.delete_all
 
 puts 'Cleaning up...'
 
 puts 'Creating user...'
 
-user = User.create!(email: 'diegofischer14@gmail.com', password: '12345678')
+user = User.create!(email: 'diegofischer14@gmail.com', password: ENV['PASSWORD'])
 
 
 puts 'Creating books...'
@@ -596,5 +597,30 @@ post1 = Post.create!(
   date: '17/07/2021',
   user: user)
 
+puts 'Creating slides...'
+
+slide1 = Slide.create!(
+  title: 'Cuando todo pase',
+  subtitle: 'Ya disponible en 🇺🇾🇦🇷🇨🇱🇨🇴🇪🇨🇲🇽',
+  link: 'https://diegofischer.com.uy/books/cuando-todo-pase',
+  user: user
+  )
+slide1.photo.attach(io: File.open('app/assets/images/slides/cuando todo pase.jpg'), filename: 'image.jpg')
+
+slide2 = Slide.create!(
+  title: 'Carlota Ferreira',
+  subtitle: 'Libro de Oro 2016. Ya disponible en eBook',
+  link: 'https://diegofischer.com.uy/books/carlota-ferreira',
+  user: user
+  )
+slide2.photo.attach(io: File.open('app/assets/images/slides/carlota ferreira.png'), filename: 'image.jpg')
+
+slide3 = Slide.create!(
+  title: 'El robo de la historia',
+  subtitle: 'Libro de Oro 2020. Ya disponible en eBook',
+  link: 'https://diegofischer.com.uy/books/el-robo-de-la-historia',
+  user: user
+  )
+slide3.photo.attach(io: File.open('app/assets/images/slides/robo historia.jpg'), filename: 'image.jpg')
 
 puts 'All done'

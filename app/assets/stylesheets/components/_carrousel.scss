@@ -78,3 +78,37 @@
     right: calc(0% + 1rem);
   }
 }
+
+.slides {
+  max-width: 80%;
+  margin: auto;
+}
+
+.slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.slide-text {
+  position: absolute;
+  width: 100%;
+  left: 10%;
+  @media (max-width: 600px) {
+    max-width: 80%;
+  }
+}
+
+img.slide_image {
+  border-radius: 15px;
+  border: 1px solid white;
+  @media (max-width: 600px) {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}

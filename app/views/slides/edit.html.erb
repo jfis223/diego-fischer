@@ -1,0 +1,16 @@
+<h2 class="title">Modificar slides</h2>
+
+  <div class="input">
+
+<% @slides.each_with_index do |slide, index| %>
+    <h4>Slide <%= index + 1 %></h4>
+    <%= simple_form_for (slide) do |p| %>
+      <%= p.input :title, placeholder: 'Nuevo libro', label: 'Título principal' %>
+      <%= p.input :subtitle, placeholder: 'Subtítulo', label: 'Subtítulo' %>
+      <%= p.input :link, placeholder: 'Link de referencia', label: 'Link' %>
+      <%= p.input :photo, as: :file, required: false, label: 'Foto de fondo' %>
+      <div class="end"><%= p.submit 'Modificar slide', class: "btn" %></div>
+    <% end %>
+ <% end %>
+
+  </div>

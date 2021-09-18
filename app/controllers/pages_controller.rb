@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     render "/slides/index"
+    @slides = Slide.all
   end
 
   def biografia
