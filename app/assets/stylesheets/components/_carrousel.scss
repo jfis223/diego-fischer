@@ -105,6 +105,7 @@
 img.slide_image {
   border-radius: 15px;
   border: 1px solid white;
+  filter: brightness(70%);
   @media (max-width: 600px) {
     width: 90%;
     margin: auto;
