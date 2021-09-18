@@ -9,14 +9,14 @@
 Book.delete_all
 Project.delete_all
 Post.delete_all
-User.delete_all
 Slide.delete_all
+User.delete_all
 
 puts 'Cleaning up...'
 
 puts 'Creating user...'
 
-user = User.create!(email: 'diegofischer14@gmail.com', password: ENV['PASSWORD'])
+user = User.create!(email: ENV['MAIL'], password: ENV['PASSWORD'])
 
 
 puts 'Creating books...'
