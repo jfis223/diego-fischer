@@ -2,23 +2,21 @@ class SlidesController < ApplicationController
 skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @slides = Slide.all
+    @slides = Slide.all.sort_by(&:updated_at).reverse
   end
 
   def show
-    @slides = Slide.all
-    @slide = Slide.find(params[:id])
+    @slide = Slide.friendly.find(params[:id])
   end
 
   def edit
-    @slides = Slide.all
-    @slide = Slide.find(params[:id])
+    @slide = Slide.friendly.find(params[:id])
   end
 
   def update
-    @slide = Slide.find(params[:id])
+    @slide = Slide.friendly.find(params[:id])
     @slide.update(slide_params)
-    redirect_to slides_path
+    redirect_to root_path
   end
 
   private
@@ -28,7 +26,3 @@ skip_before_action :authenticate_user!, only: [:index, :show]
   end
 
 end
-
-# El edit debería tener todas las slides para poder tener una única página donde editar.
-# El view del edit debería iterar por slides.all
-# El update controller debería iterar por slides.all y hacer el update y redireccionar al home.

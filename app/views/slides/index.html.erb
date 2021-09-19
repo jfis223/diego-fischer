@@ -1,6 +1,6 @@
 
 <div class="slides">
-<%  Slide.all.each do |slide| %>
+<%  Slide.all.sort_by(&:updated_at).reverse.each do |slide| %>
   <%= link_to slide.link do %>
   <div class="slide">
       <%= cl_image_tag slide.photo.key, class: "slide_image", alt: slide.title, crop: "fill", gravity: "auto" %>
@@ -11,5 +11,15 @@
     </div>
   </div>
   <% end %>
+  <div class="admin-wrapper">
+  <% if user_signed_in? %>
+      <%= link_to edit_slide_path(slide) do %>
+        <h5 class="buy-btn admin">Modificar slide</h5>
+      <% end %>
+    <% else %>
+    <div></div>
+  <% end %>
+  </div>
 <% end %>
+
 </div>
