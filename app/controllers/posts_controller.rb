@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @posts = Post.all.sort_by(&:date)
+    @posts = Post.all.sort_by { |item| Date.strptime(item.date, '%d/%m/%Y') }.reverse
   end
 
   def show
