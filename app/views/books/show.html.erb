@@ -33,7 +33,7 @@
   <%= @book.description %>
 </div>
 
-<% if @book.booktrailer || @book.booktrailer != "" %>
+<% if @book.booktrailer != "" || @book.booktrailer != nil %>
   <% regex = /(?:v=)([^&]+)/  %>
   <%  video_url = @book.booktrailer.match(regex) %>
   <div class="booktrailer">
