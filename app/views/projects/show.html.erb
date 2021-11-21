@@ -21,9 +21,10 @@
   <%= @project.description %>
 </div>
 
-<% if @project.trailer  %>
   <% regex = /(?:v=)([^&]+)/  %>
   <%  video_url = @project.trailer.match(regex) %>
+
+<% unless @project.trailer.nil?  %>
   <div class="booktrailer">
       <iframe width="560" height="315"
       src="https://www.youtube.com/embed/<%= video_url[1] %>"
@@ -32,8 +33,6 @@
       allowfullscreen>
       </iframe>
   </div>
-<% else  %>
-  <%= "" %>
 <% end %>
 
 <div class="admin-wrapper">

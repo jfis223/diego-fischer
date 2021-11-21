@@ -35,7 +35,7 @@
 
   <% regex = /(?:v=)([^&]+)/  %>
   <%  video_url = @book.booktrailer.match(regex) %>
-  
+
 <% unless video_url.nil? %>
   <div class="booktrailer">
       <iframe width="560" height="315"
@@ -45,8 +45,6 @@
       allowfullscreen>
       </iframe>
   </div>
-<% else  %>
-  <%= "" %>
 <% end %>
 
 
