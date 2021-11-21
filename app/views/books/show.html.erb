@@ -33,20 +33,6 @@
   <%= @book.description %>
 </div>
 
-<% if @book.booktrailer != "" || @book.booktrailer != nil %>
-  <% regex = /(?:v=)([^&]+)/  %>
-  <%  video_url = @book.booktrailer.match(regex) %>
-  <div class="booktrailer">
-      <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/<%= video_url[1] %>"
-      title="<%= @book.title %> Book Trailer" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-      </iframe>
-  </div>
-<% else  %>
-  <%= "" %>
-<% end %>
 
 <div class="admin-wrapper">
   <% if user_signed_in? %>
