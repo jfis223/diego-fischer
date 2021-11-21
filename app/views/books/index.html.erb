@@ -5,13 +5,13 @@
       <%= link_to book_path(book) do %>
           <div class="mobile-layout">
             <div class="book-cover">
-                <div class="">
+
                   <% if book.photo.attached? %>
                   <%= cl_image_tag book.photo.key, class: 'book-top', width: 375, height: 269, crop: "scale" %>
                   <% else %>
                   <%= "" %>
                   <% end  %>
-                  </div>
+
                 <%= image_tag "book-side.svg", alt: "book-side", class: "book-side" %>
 <!--            <img class="book-side" src="https://saranyamk.github.io/images-repo/book-side.svg" alt="book-side" /> -->
               </div>

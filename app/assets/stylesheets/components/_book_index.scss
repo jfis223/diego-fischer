@@ -89,7 +89,8 @@
     position: absolute;
     top: 363px;
     left: 222px;
-    transform: translateY(-38px) translateX(-102px) translateZ(15px) rotateX(104deg) scale(0.4);
+    transform: translateY(-35px) translateX(-102px) translateZ(15px) rotateX(104deg) scale(0.4);
+    z-index: 10;
   }
 
   .book-cover:hover {
