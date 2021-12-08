@@ -22,12 +22,13 @@
 </div>
 
   <% regex = /(?:v=)([^&]+)/  %>
-  <%  video_url = @project.trailer.match(regex) %>
+  <%  video_url = @project.trailer %>
 
-<% unless @project.trailer.nil?  %>
+<% unless @project.trailer.nil? || video_url == "" || video_url == " " %>
+  <% project_match = video_url.match(regex) %>
   <div class="booktrailer">
       <iframe width="560" height="315"
-      src="https://www.youtube.com/embed/<%= video_url[1] %>"
+      src="https://www.youtube.com/embed/<%= project_match[1] %>"
       title="<%= @project.title %>" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
