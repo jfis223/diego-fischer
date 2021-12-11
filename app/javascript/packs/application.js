@@ -24,6 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { } from "../components/slick.min.js"
 import { navBar } from "../components/navbar"
 
 // Internal imports, e.g:
@@ -40,3 +41,13 @@ require("@rails/actiontext")
 
 import "trix"
 import "@rails/actiontext"
+
+jQuery(".slides").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  dots: true,
+  arrows: false
+});
+  
