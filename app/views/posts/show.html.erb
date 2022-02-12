@@ -14,6 +14,21 @@
   <%= @post.content %>
 </div>
 
+  <% regex = /(?:v=)([^&]+)/  %>
+  <% video_url = @post.youtube_url %>
+
+<% unless video_url.nil? || video_url == "" || video_url == " " %>
+<% video_match = video_url.match(regex) %>
+  <div class="booktrailer">
+      <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/<%= video_match[1] %>"
+      title="<%= @post.title %>" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+      </iframe>
+  </div>
+<% end %>
+
 <div class="admin-wrapper">
   <% if user_signed_in? %>
       <%= link_to edit_post_path(@post) do %>

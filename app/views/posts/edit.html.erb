@@ -7,6 +7,7 @@
       <%= p.input :content, as: :rich_text_area, placeholder: 'Contenido', label: 'Contenido' %>
       <%= p.input :date, placeholder: 'Formato DD/MM/AAAA', label: 'Fecha de publicación' %>
       <%= p.input :reference, placeholder: 'Link de referencia', label: 'Link de referencia' %>
+      <%= p.input :youtube_url, placeholder: 'Link de YouTube (si hay)', label: 'Solo funciona YouTube' %>
       <div class="end"><%= p.submit 'Modificar noticia', class: "btn" %></div>
     <% end %>
 
