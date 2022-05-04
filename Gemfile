@@ -8,11 +8,11 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.7'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem "puma", ">= 4.3.9"
+gem "puma", ">= 5.6.4"
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -22,7 +22,7 @@ gem 'redis', '~> 4.0'
 gem 'friendly_id', '~> 5.4.0'
 gem 'mail_form'
 gem 'sassc'
-gem 'nokogiri'
+gem "nokogiri", ">= 1.13.4"
 gem 'marcel'
 gem 'mimemagic'
 
