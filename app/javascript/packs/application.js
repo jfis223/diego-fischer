@@ -34,6 +34,17 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   navBar();
+  if (document.querySelector('.slides')) {
+    jQuery(".slides").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      arrows: false,
+      adaptiveHeight: true
+    });
+  }
 });
 
 require("trix")
@@ -42,12 +53,5 @@ require("@rails/actiontext")
 import "trix"
 import "@rails/actiontext"
 
-jQuery(".slides").slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  dots: true,
-  arrows: false
-});
+
   
