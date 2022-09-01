@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.4'
+ruby '3.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.7'
+gem "rails", "~> 7.0.3.1"
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -20,11 +20,11 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 gem 'friendly_id', '~> 5.4.0'
-gem 'mail_form'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'sassc'
-gem "nokogiri", ">= 1.13.4"
 gem 'marcel'
 gem 'mimemagic'
+gem "sprockets-rails"
 
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -39,7 +39,7 @@ gem 'devise'
 gem 'cloudinary'
 
 gem 'autoprefixer-rails', '10.2.5'
-gem 'font-awesome-sass'
+gem "font-awesome-sass", "~> 6.2.0"
 gem 'simple_form'
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

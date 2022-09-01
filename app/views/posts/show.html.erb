@@ -43,4 +43,4 @@
 </div>
 
 <% content_for :meta_title, "#{@post.title} is on #{DEFAULT_META["meta_product_name"]}" %>
-<% content_for :meta_description, @post.content %>
+<% content_for :meta_description, @post.content.to_plain_text %>
