@@ -23,7 +23,6 @@ gem 'friendly_id', '~> 5.4.0'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'sassc'
 gem 'marcel'
-gem 'mimemagic'
 gem "sprockets-rails"
 
 # Use Active Model has_secure_password
