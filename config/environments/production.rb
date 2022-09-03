@@ -94,16 +94,19 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: 'https://diego-fischer.fly.dev/' }
+  Rails.application.routes.default_url_options[:host] = 'https://diego-fischer.fly.dev/'
   config.action_mailer.delivery_method = :smtp
-
-  ActionMailer::Base.smtp_settings = {
-   :user_name => 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
-   :password => ENV['MAILGUN_SMTP_PASSWORD'], # This is the secret sendgrid API key which was issued during API key creation
-   :domain => 'fly.dev',
-   :address => 'smtp.sendgrid.net',
-   :port => 587,
-   :authentication => :plain,
-   :enable_starttls_auto => true
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default charset: 'utf-8'
+  config.action_mailer.smtp_settings = {
+      address: 'smtp.gmail.com'
+      port: 587
+      domain: 'gmail.com'
+      authentication: 'plain'
+      enable_starttls_auto: true
+      user_name: ENV['GMAIL_USERNAME']
+      password: ENV['GMAIL_PASSWORD']
   }
 
   # Inserts middleware to perform automatic connection switching.
