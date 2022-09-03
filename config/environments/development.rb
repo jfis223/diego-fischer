@@ -55,6 +55,17 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+    ActionMailer::Base.smtp_settings = {
+      :user_name => 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
+      :password => ENV['MAILGUN_SMTP_PASSWORD'], # This is the secret sendgrid API key which was issued during API key creation
+      :domain => '127.0.0.1:3000/',
+      :address => 'smtp.sendgrid.net',
+      :port => 587,
+      :authentication => :plain,
+      :enable_starttls_auto => true
+    }
+    ActionMailer::Base.delivery_method = :smtp
+
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
 

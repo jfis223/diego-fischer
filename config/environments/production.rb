@@ -94,12 +94,13 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   ActionMailer::Base.smtp_settings = {
-  :port           => ENV['MAILGUN_SMTP_PORT'],
-  :address        => ENV['MAILGUN_SMTP_SERVER'],
-  :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-  :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-  :domain         => 'diego-fischer.fly.dev/', # UPDATE THIS VALUE WITH YOUR OWN APP
-  :authentication => :plain,
+   :user_name => 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
+   :password => ENV['MAILGUN_SMTP_PASSWORD'], # This is the secret sendgrid API key which was issued during API key creation
+   :domain => '127.0.0.1:3000/',
+   :address => 'diego-fischer.fly.dev/',
+   :port => 587,
+   :authentication => :plain,
+   :enable_starttls_auto => true
   }
   ActionMailer::Base.delivery_method = :smtp
 
