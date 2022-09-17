@@ -24,6 +24,7 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'sassc'
 gem 'marcel'
 gem "sprockets-rails"
+gem "recaptcha"
 
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
