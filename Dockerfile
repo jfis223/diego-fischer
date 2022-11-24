@@ -31,6 +31,9 @@ ENV PATH $VOLTA_HOME/bin:/usr/local/bin:$PATH
 
 RUN volta install node@${NODE_VERSION} && volta install yarn
 
+# Use yarn v1
+RUN yarn set version classic
+
 FROM base as build_deps
 
 ARG DEV_PACKAGES="git build-essential libpq-dev wget vim curl gzip xz-utils libsqlite3-dev"
