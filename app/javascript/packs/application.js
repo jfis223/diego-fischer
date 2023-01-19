@@ -45,6 +45,11 @@ document.addEventListener('turbolinks:load', () => {
       adaptiveHeight: true
     });
   }
+  if (typeof gtag === 'function') {
+    gtag('config', 'G-31HJYNVLJ5', {
+      'page_location': event.data.url
+    })
+  }
 });
 
 require("trix")
@@ -52,13 +57,5 @@ require("@rails/actiontext")
 
 import "trix"
 import "@rails/actiontext"
-
-document.addEventListener("turbo:load", function(event) {
-  window.dataLayer = window.dataLayer || []
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date())
-  gtag('config', 'G-31HJYNVLJ5', {'page_location': event.detail.url})
-}, false)
-
 
   
