@@ -62,6 +62,6 @@
   <% end %>
 </div>
 
-<% content_for :meta_title, "#{@book.title} is on #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_title, "#{@book.title} de #{DEFAULT_META["meta_product_name"]} || Sitio web oficial" %>
 <% content_for :meta_description, @book.description.to_plain_text  %>
 <% content_for :meta_image, cl_image_path(@book.photo.key) %>
