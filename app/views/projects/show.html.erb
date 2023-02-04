@@ -49,6 +49,6 @@
   <% end %>
 </div>
 
-<% content_for :meta_title, "#{@project.title} || #{DEFAULT_META["meta_product_name"]} || Sitio web oficial" %>
+<% content_for :meta_title, "#{@project.title} || #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @project.description.to_plain_text %>
 <% content_for :meta_image, cl_image_path(@project.photo.key) %>
