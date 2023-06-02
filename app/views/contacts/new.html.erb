@@ -8,7 +8,7 @@
       <%= p.input :email, placeholder: 'nombre@gmail.com', label: 'Correo electrónico', required: true %>
       <%= p.input :message, as: :text, placeholder: 'Escribe aquí tu mensaje', label: 'Mensaje', required: true %>
 
-       <%= recaptcha_tags theme: 'dark' %>
+       <%= recaptcha_tags %>
 
       <div class="end"><%= p.submit 'Enviar mensaje', class: "btn" %></div>
     <% end %>

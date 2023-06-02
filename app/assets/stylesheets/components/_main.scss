@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 
+.privacyp,
 .input-wrapper {
   max-width: 80%;
   margin: auto;
@@ -46,6 +47,14 @@ p, label, ol, ul, li {
   margin-block-start: 0;
   padding-inline-start: 0;
   text-align: justify;
+  }
+  a{
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover{
+  text-decoration: underline;
+  }
   }
 }
 
