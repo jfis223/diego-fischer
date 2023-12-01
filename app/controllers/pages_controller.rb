@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :biografia, :privacy_policy :defensa_paysandu_el_precio_de_una_traicion]
+  skip_before_action :authenticate_user!, only: [ :home, :biografia, :privacy_policy, :defensa_paysandu_el_precio_de_una_traicion]
 
   def home
     render "/slides/index"
