@@ -36,6 +36,7 @@ gem "recaptcha"
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'yaml'
 gem 'cloudinary'
 
 gem 'autoprefixer-rails', '10.2.5'
