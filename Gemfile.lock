@@ -325,7 +325,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   cloudinary
-  devise
+  devise (~> 4.9, >= 4.9.3)
   dotenv-rails
   font-awesome-sass (~> 6.2.0)
   friendly_id (~> 5.4.0)

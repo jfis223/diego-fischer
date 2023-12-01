@@ -35,7 +35,7 @@ gem "recaptcha"
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-gem 'devise'
+gem 'devise', '~> 4.9', '>= 4.9.3'
 gem 'cloudinary'
 
 gem 'autoprefixer-rails', '10.2.5'
