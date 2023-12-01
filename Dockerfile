@@ -3,7 +3,7 @@ ARG RUBY_VERSION=2.7.3
 ARG VARIANT=jemalloc-slim
 FROM quay.io/evl.ms/fullstaq-ruby:${RUBY_VERSION}-${VARIANT} as base
 
-ARG NODE_VERSION=16
+ARG NODE_VERSION=14
 ARG BUNDLER_VERSION=2.3.9
 
 ARG RAILS_ENV=production
@@ -32,7 +32,7 @@ ENV PATH $VOLTA_HOME/bin:/usr/local/bin:$PATH
 RUN volta install node@${NODE_VERSION} && volta install yarn
 
 # Use yarn v1
-RUN yarn set version classic
+#RUN yarn set version classic
 
 FROM base as build_deps
 
