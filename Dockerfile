@@ -29,14 +29,14 @@ ENV BASH_ENV ~/.bashrc
 ENV VOLTA_HOME /root/.volta
 ENV PATH $VOLTA_HOME/bin:/usr/local/bin:$PATH
 
-RUN volta install node@${NODE_VERSION} && volta install yarn && volta install libyaml
+RUN volta install node@${NODE_VERSION} && volta install yarn
 
 # Use yarn v1
 #RUN yarn set version classic
 
 FROM base as build_deps
 
-ARG DEV_PACKAGES="git build-essential libpq-dev wget vim curl gzip xz-utils libsqlite3-dev"
+ARG DEV_PACKAGES="git build-essential libpq-dev wget vim curl gzip xz-utils libsqlite3-dev libyaml-dev"
 ENV DEV_PACKAGES ${DEV_PACKAGES}
 
 RUN --mount=type=cache,id=dev-apt-cache,sharing=locked,target=/var/cache/apt \
