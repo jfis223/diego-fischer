@@ -25,7 +25,7 @@
     <% else %>
       <h5 class="buy-btn" style="pointer-events: none; cursor: not-allowed;">No disponible</h5>
     <% end %>
-    <% if @book.ebook_link %>
+    <% if @book.ebook_link and @book.ebook_link != "" and @book.ebook_link != " " %>
       <a target="_blank" class="buy-btn" href="<%= @book.ebook_link %>"><h5>Comprar eBook</h5></a>
     <% else %>
       <h5 class="buy-btn" style="pointer-events: none; cursor: not-allowed;">No disponible en eBook</h5>
