@@ -8,6 +8,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     if verify_recaptcha(model: @contact)
+       ContactMailer.contact_email(@contact).deliver_now
         @contact.request = request
         if @contact.deliver
            flash.now[:success] = 'Mensaje enviado'
